@@ -1730,7 +1730,7 @@ figcaption {
 
   .logo-image {
     box-sizing: border-box;
-    object-fit: none;
+    object-fit: contain;
     width: 135px;
     overflow: clip;
   }
