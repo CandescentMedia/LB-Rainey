@@ -213,8 +213,7 @@ figcaption {
   background-color: #0d448e;
   border: 1px solid #0d448e;
   border-radius: 4px;
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin: 10px 10px 0;
   padding-top: 20px;
 }
 
@@ -231,7 +230,7 @@ figcaption {
   color: #2a343f;
   text-align: center;
   width: 100%;
-  max-width: 1140px;
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1385,12 +1384,8 @@ figcaption {
   display: flex;
 }
 
-.footer-message-link {
+.footer-message-link, .columns-2 {
   display: flex;
-}
-
-.columns-2 {
-  margin-bottom: 10px;
 }
 
 .column-4 {
@@ -1485,6 +1480,12 @@ figcaption {
   letter-spacing: 2px;
   justify-content: center;
   font-size: 14px;
+}
+
+.columns-4 {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
 }
 
 .image-3 {
@@ -1976,6 +1977,10 @@ figcaption {
     padding-left: 10px;
   }
 
+  .text-block-10.address {
+    font-size: 14px;
+  }
+
   .icon {
     margin-left: 10px;
     margin-right: 10px;
@@ -2218,8 +2223,18 @@ figcaption {
     display: flex;
   }
 
-  .footer-phone, .footer-message-link {
+  .footer-phone {
     justify-content: center;
+    align-items: center;
+  }
+
+  .footer-message-link {
+    justify-content: center;
+  }
+
+  .columns-2 {
+    justify-content: center;
+    align-items: center;
   }
 
   .column-4 {
@@ -2237,9 +2252,10 @@ figcaption {
   }
 
   .column-7 {
-    flex-flow: wrap;
+    flex-flow: row;
     justify-content: center;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 0;
     display: flex;
   }
 
@@ -2560,8 +2576,13 @@ figcaption {
     display: inline;
   }
 
-  .link-block-2 {
+  .columns-2 {
     flex-flow: column;
+  }
+
+  .link-block-2 {
+    flex-flow: row;
+    flex: none;
     align-items: center;
     padding-right: 0;
   }
@@ -2571,6 +2592,16 @@ figcaption {
     font-size: 10px;
   }
 
+  .column-6 {
+    align-items: center;
+  }
+
+  .column-7 {
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   .footer-image {
     margin-bottom: 5px;
   }
@@ -2578,13 +2609,14 @@ figcaption {
   .text-block-10 {
     justify-content: center;
     align-items: center;
-    width: 90px;
-    font-size: 14px;
+    width: auto;
+    font-size: 12px;
     line-height: 18px;
   }
 
   .text-block-10.address {
     width: 175px;
+    font-size: 12px;
   }
 
   .mask {
